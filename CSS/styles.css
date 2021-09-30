@@ -1,0 +1,82 @@
+.parent { 
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 150px; 
+    background-color: #6031ac; 
+    border: solid 4px #000000; 
+    font-size: larger; 
+  } 
+  .child { 
+    position: absolute; 
+    left: 100px;
+    top: 50px;
+    width: 50px; 
+    height: 50px; 
+    background-color: #aa370a; 
+    border: solid 4px #08eb1f; 
+    font-size: large;
+  }
+
+.LoadButton{
+    position: fixed;
+    left: 80%;
+    top: 60%;
+    background-image:linear-gradient(#db577e,#73e664);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+    animation-duration: 0.5s;
+    animation-name: jumping;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.LoadButton:hover { 
+    background-image:linear-gradient(#e66465, #9198e5); 
+    }
+
+@keyframes jumping {
+    from {
+        margin-top: 15%;
+        font-size: 20px;
+        padding: 15px 32px;
+    }
+  
+    to {
+      margin-top: 2%;
+      margin-left: 1.2%;
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+  }
+
+  .class_example{
+      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: indigo;
+  }
+
+  #id_example{
+      font-size: small;
+      font-family: 'Courier New', Courier, monospace;
+      color: darkgreen;
+  }
+
+  .float_block{
+    float: left;
+    font-size: large;
+    background: green;
+    border: 3px solid black;
+    padding: 5px;
+    height: 200px;
+  }
+
+  .text{
+    margin-right: 30%; 
+    text-align: justify;
+  }
